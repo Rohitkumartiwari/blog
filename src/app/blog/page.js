@@ -38,11 +38,12 @@ console.log("auth")
     fetchData();
   }, []);
 const user=(data?data:[])?.filter((item)=>item?.id==auth?.id);
+  return
    (
     <div className="container">
       <section className=" row my-2">
         <div className={`${ Styles.fixed_column} col-md-4`}>
-          <Card>
+          
             <CardBody className="text-center">
               <div className="d-flex justify-content-center">
               <div className={Styles.blog_header_image}>
