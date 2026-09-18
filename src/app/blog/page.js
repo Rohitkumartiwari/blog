@@ -22,7 +22,7 @@ const Home = () => {
     setAuth(data)
   },[]);
   const[data,setData]=useState([]);
-console.log(auth,"auth")
+console.log("auth")
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -38,7 +38,7 @@ console.log(auth,"auth")
     fetchData();
   }, []);
 const user=(data?data:[])?.filter((item)=>item?.id==auth?.id);
-  return (
+   (
     <div className="container">
       <section className=" row my-2">
         <div className={`${ Styles.fixed_column} col-md-4`}>
@@ -65,6 +65,7 @@ const user=(data?data:[])?.filter((item)=>item?.id==auth?.id);
         <div className={`${ Styles.scrollable_column }  col-md-8`}>
          <UplaodContent/>
           <UploadContentData/>
+                  <Modal data={data}/>
         </div>
       </section>
     </div>
