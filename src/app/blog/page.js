@@ -8,7 +8,7 @@ import Styles from "../../styles/Blog/blog.module.css";
 import usersLogo from "../../../public/images/users/user6.png"
 import axios from "axios";
 import {
-  Card,
+  
   CardBody,
   CardTitle,
  
