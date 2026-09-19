@@ -6,7 +6,6 @@ import Image from "next/image";
 import blog from "../../../public/images/logos/IMG_2950 (1).jpg";
 import Styles from "../../styles/Blog/blog.module.css";
 import usersLogo from "../../../public/images/users/user6.png"
-import axios from "axios";
 import {
   
   CardBody,
@@ -42,7 +41,6 @@ const user=(data?data:[])?.filter((item)=>item?.id==auth?.id);
     <div className="container">
       <section className=" row my-2">
         <div className={`${ Styles.fixed_column} col-md-4`}>
-          <Card>
             <CardBody className="text-center">
               <div className="d-flex justify-content-center">
               <div className={Styles.blog_header_image}>
@@ -65,6 +63,7 @@ const user=(data?data:[])?.filter((item)=>item?.id==auth?.id);
         <div className={`${ Styles.scrollable_column }  col-md-8`}>
          <UplaodContent/>
           <UploadContentData/>
+                  <Data/>
         </div>
       </section>
     </div>
